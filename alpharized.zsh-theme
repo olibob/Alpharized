@@ -2,7 +2,7 @@ PROMPT='
 $(_user_host) %{$fg[blue]%}%3c%{$reset_color%} $(git_prompt_info) $(_ruby_version)
 %{$fg[green]%}➜ '
 
-PROMPT2='%{$fg[green]%}◀%{$reset_color%} '
+PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
 
 RPROMPT='$(_vi_status)%{$(echotc UP 1)%} $(git_prompt_status) ${_return_status} %{$(echotc DO 1)%}'
 
