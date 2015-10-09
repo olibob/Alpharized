@@ -4,7 +4,7 @@ $(_user_host)%{$fg[blue]%}%3c%{$reset_color%} $(git_prompt_info) $(_ruby_version
 
 PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
 
-RPROMPT='$(_vi_status)%{$(echotc UP 1)%} $(git_prompt_status) ${_return_status} %{$fg_bold[red]%}%*%{$reset_color%} %{$(echotc DO 1)%}'
+RPROMPT='$(_vi_status) $(git_prompt_status) ${_return_status} %{$fg_bold[red]%}%*%{$reset_color%}'
 
 local _return_status="%{$fg[red]%}%(?..⍉)%{$reset_color%}"
 local _hist_no="%{$fg[grey]%}%h%{$reset_color%}"
